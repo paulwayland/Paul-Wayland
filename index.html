@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Canadian Direct Democracy – Vote on parliamentary bills directly.">
+  <title>Canadian Direct Democracy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <img class="flag left" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" alt="Canadian flag" title="Proudly Canadian 🇨🇦">
+    <img class="flag right" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" alt="Canadian flag" title="Proudly Canadian 🇨🇦">
+    <h1>Canadian Direct Democracy</h1>
+    <p class="tagline">Vote. Decide. Together.</p>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="#bills">Bills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="vote-now" class="gray">
+      <h2>Vote Now</h2>
+      <p class="question">Do you support Bill C-2 (Strong Borders Act)?</p>
+      <div class="vote-buttons">
+        <button id="yes-button" class="yes">✅ Yes</button>
+        <button id="no-button" class="no">❌ No</button>
+      </div>
+    </section>
+    <section id="bills">
+      <h2>Latest Parliamentary Bills</h2>
+      <div id="bill-list" class="bills"></div>
+    </section>
+    <section id="about" class="gray">
+      <h2>About</h2>
+      <p>This demo lets Canadians explore and comment on current parliamentary bills.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    Made by Paul - <a href="https://github.com/placeholder">GitHub</a>
+  </footer>
+  <div id="vote-modal" class="modal hidden">
+    <div class="modal-content">
+      <p>Thank you for voting! Your response has been recorded.</p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

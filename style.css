@@ -1,0 +1,74 @@
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  background:#fff;
+  color:#333;
+  animation:fadein 0.6s ease-in;
+}
+.site-header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  padding:1rem 0.5rem 0.5rem;
+  box-shadow:0 2px 4px rgba(0,0,0,0.1);
+  text-align:center;
+  z-index:1000;
+}
+.site-header h1{
+  color:#FF0000;
+  margin:0;
+  text-shadow:0 1px 2px rgba(0,0,0,0.1);
+}
+.flag{
+  position:absolute;
+  top:8px;
+  width:40px;
+  height:auto;
+}
+.flag.left{left:8px;}
+.flag.right{right:8px;}
+nav{margin-top:0.5rem;}
+nav a{
+  color:#333;
+  margin:0 1rem;
+  text-decoration:none;
+  padding-bottom:0.25rem;
+  transition:color 0.3s;
+}
+nav a:hover{color:#FF0000;}
+nav a.active{border-bottom:2px solid #FF0000;font-weight:bold;}
+section{padding:2rem 1rem;}
+.gray{background:#F5F5F5;}
+.tagline{margin-top:0.25rem;font-size:1.1rem;}
+.vote-buttons{display:flex;gap:1rem;margin-top:1rem;}
+.vote-buttons button{
+  flex:1;
+  border:none;
+  padding:0.75rem 1rem;
+  font-size:1.2rem;
+  color:#fff;
+  border-radius:6px;
+  cursor:pointer;
+  transition:transform 0.3s,box-shadow 0.3s;
+}
+.vote-buttons button.yes{background:#28a745;}
+.vote-buttons button.no{background:#dc3545;}
+.vote-buttons button:hover{transform:translateY(-2px);box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+@media(max-width:600px){.vote-buttons{flex-direction:column;}}
+.bill{background:#F5F5F5;padding:1rem;border-radius:6px;margin-bottom:1rem;}
+.bill h3{margin:0;color:#FF0000;}
+.bill a{color:#FF0000;text-decoration:none;transition:color 0.3s;}
+.bill a:hover{text-decoration:underline;}
+.highlights{margin:0.5rem 0 0 1rem;}
+.comment-form{display:flex;gap:0.5rem;margin-top:0.5rem;}
+.comment-form input{flex:1;padding:0.5rem;border-radius:4px;border:1px solid #ccc;}
+.comment-form button{background:#FF0000;color:#fff;border:none;border-radius:4px;padding:0.5rem 1rem;cursor:pointer;transition:background 0.3s;}
+.comment-form button:hover{background:#cc0000;}
+footer{text-align:center;padding:1rem;background:#F5F5F5;margin-top:2rem;}
+.modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);display:flex;justify-content:center;align-items:center;}
+.modal.hidden{display:none;}
+.modal-content{background:#fff;padding:2rem;border-radius:6px;text-align:center;max-width:300px;}
+.modal-content button{margin-top:1rem;background:#FF0000;color:#fff;border:none;border-radius:4px;padding:0.5rem 1rem;cursor:pointer;}
+@keyframes fadein{from{opacity:0;}to{opacity:1;}}
+@media(min-width:800px){section{padding:3rem 2rem;max-width:800px;margin:0 auto;}}
